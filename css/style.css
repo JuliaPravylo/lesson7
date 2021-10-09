@@ -1,0 +1,616 @@
+/* Підключення  шрифтів */
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap&subset=cyrillic-ext");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px; /* по умолчанию */
+}
+body {
+	line-height: 1;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	padding: 20px;
+}
+/* ------------------------------ */
+
+.block{
+    background-color:deeppink;
+    max-width: 500px;
+    font-family: "Comfortaa", serif;
+    padding: 25px;
+    box-shadow: 5px 5px 5px palevioletred;
+    margin: 30px;
+}
+
+.item{
+    font-weight: 700;
+    max-width: 200px;
+    background-color:gold;
+    padding: 5px;
+    border: 1px solid navy;
+    border-radius: 5px;
+    text-align: center;
+    margin: 15px;
+}
+
+.text{
+    margin: 15px;
+    border: 1px solid navy;
+    padding: 5px;
+}
+
+.example-bi{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px;
+    max-width: 200px;
+    font-family: "Comfortaa", serif;
+    text-align: center;
+    letter-spacing: 10px;
+    margin: 30px;
+    background-image: url("../img/watermelon.jpg");
+}
+.example-repeat-bi{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px;
+    width: 250px;
+    height: 250px;
+    font-family: "Comfortaa", serif;
+    text-align: center;
+    margin: 30px;
+    background-image: url("../img/watermelon2.jfif");
+    border: 3px dashed palevioletred;
+}
+.example-crash-bi{
+    display: inline-block;
+    margin: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px;
+    font-family: "Comfortaa", serif;
+    text-align: center;
+    /* background-image: url("../img/wOtermelon3.jfif"); */
+    /* background-color: palevioletred; */
+    background: palevioletred url("../img/wOtermelon3.jfif");
+}
+.example-img-bi{
+    display: inline-block;
+    max-width: 500px;
+    margin: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px;
+    font-family: "Comfortaa", serif;
+    text-align: center;
+    background:fuchsia url("../img/sheep.jfif");
+}
+.example-img-trans{
+    max-width: 500px;
+    margin: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px;
+    font-family: "Comfortaa", serif;
+    text-align: center;
+    background: violet url("../img/Overline_Mark.svg");
+}
+.example-img{
+    max-width: 500px;
+    margin: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px;
+    font-family: "Comfortaa", serif;
+    text-align: center;
+}
+.example-grad{
+    max-width: 500px;
+    margin: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px;
+    font-family: "Comfortaa", serif;
+    text-align: center;
+    background: linear-gradient(-45deg, rgb(247,121,238) 0%,rgb(206,201,99) 15%,rgb(136,102,209) 40%,rgb(132,188,92) 67%,rgb(168,73,163) 100%);
+}
+.example-imgnr{
+    display: inline-block;
+    max-width: 500px;
+    margin: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 25px;
+    font-family: "Comfortaa", serif;
+    text-align: center;
+    background: url("../img/pizza.jpg") no-repeat;
+    border: 3px dotted rgb(238, 130, 238);
+}
+.example-imgxr{
+    display: inline-block;
+    max-width: 500px;
+    margin: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 50px 25px 25px 25px;
+    font-family: "Comfortaa", serif;
+    text-align: center;
+    background: rgb(238, 186, 238) url("../img/pizza.jpg") repeat-x;
+    border: 3px dotted violet;
+}
+.example-imgyr{
+    display: inline-block;
+    max-width: 500px;
+    margin: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 25px 25px 25px 50px;
+    font-family: "Comfortaa", serif;
+    text-align: center;
+    background: rgb(238, 186, 238) url("../img/pizza.jpg") repeat-y;
+    border: 3px dotted violet;
+}
+.example-bp-tl{
+    display: inline-block;
+    max-width: 300px;
+    margin: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 25px 25px 25px 50px;
+    font-family: "Comfortaa", serif;
+    text-align: center;
+    background: rgb(238, 186, 238) url("../img/banana.jpg") 0 0 no-repeat;
+    border: 3px dashed slateblue;
+}
+.example-bp-tc{
+    display: inline-block;
+    max-width: 300px;
+    margin: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 100px 15px 15px 15px;
+    font-family: "Comfortaa", serif;
+    text-align: center;
+    background: rgb(238, 186, 238) url("../img/banana.jpg") 50% 0 no-repeat;
+    border: 3px dashed slateblue;
+}
+.example-bp-tr{
+    display: inline-block;
+    max-width: 300px;
+    margin: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 25px 25px 25px 50px;
+    font-family: "Comfortaa", serif;
+    text-align: center;
+    background: rgb(238, 186, 238) url("../img/banana.jpg") top right no-repeat;
+    border: 3px dashed slateblue;
+}
+.example-bp-cl{
+    display: inline-block;
+    max-width: 300px;
+    margin: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 25px 25px 25px 50px;
+    font-family: "Comfortaa", serif;
+    text-align: center;
+    background: rgb(238, 186, 238) url("../img/banana.jpg") 0% 50%  no-repeat;
+    border: 3px dashed slateblue;
+}
+.example-bp-cc{
+    display: inline-block;
+    max-width: 300px;
+    margin: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 15px;
+    font-family: "Comfortaa", serif;
+    text-align: left;
+    background: rgb(238, 186, 238) url("../img/banana.jpg") 50%  no-repeat;
+    border: 3px dashed slateblue;
+}
+.example-bp-cr{
+    display: inline-block;
+    max-width: 300px;
+    margin: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 25px 50px 25px 25px;
+    font-family: "Comfortaa", serif;
+    text-align: center;
+    background: rgb(238, 186, 238) url("../img/banana.jpg") 100% 50%  no-repeat;
+    border: 3px dashed slateblue;
+}
+.example-bp-bl{
+    display: inline-block;
+    max-width: 300px;
+    margin: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 25px 25px 25px 50px;
+    font-family: "Comfortaa", serif;
+    text-align: center;
+    background: rgb(238, 186, 238) url("../img/banana.jpg") 0 100% no-repeat;
+    border: 3px dashed slateblue;
+}
+.example-bp-bc{
+    display: inline-block;
+    max-width: 300px;
+    margin: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 5px 15px 100px 15px;
+    font-family: "Comfortaa", serif;
+    text-align: center;
+    background: rgb(238, 186, 238) url("../img/banana.jpg") 50% 100% no-repeat;
+    border: 3px dashed slateblue;
+}
+.example-bp-rb{
+    display: inline-block;
+    max-width: 300px;
+    margin: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 25px 40px 25px 10px;
+    font-family: "Comfortaa", serif;
+    text-align: left;
+    background: rgb(238, 186, 238) url("../img/banana.jpg") 100% 100% no-repeat;
+    border: 3px dashed slateblue;
+}
+.example-bs{
+    display: inline-block;
+    max-width: 500px;
+    margin: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 15px 15px 15px 50px;
+    font-family: "Comfortaa", serif;
+    text-align: right;
+    border: 3px dashed slateblue;
+    background:  rgb(224, 120, 250) url("../img/dino.png") 0 0 no-repeat;
+    background-size: 50px 50px;
+}
+.example-bsproc{
+    margin: 30px auto;
+    max-width: 300px;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 15px;
+    font-family: "Comfortaa", serif;
+    text-align: center;
+    border: 3px dotted rgb(56, 202, 68);
+    background:rgb(238, 130, 238);
+}
+.bsprocauto{
+    max-width: 400px;
+    display: inline-block;
+    margin: 5px;
+    border: 3px dotted rgb(56, 202, 68);
+    padding: 15px;
+    font-family: "Comfortaa", serif;
+    text-align: center;
+    background:rgb(238, 130, 238) url("../img/dino.png") no-repeat;
+    background-size: 25% auto;
+}
+.bsautoproc{
+    max-width: 400px;
+    display: inline-block;
+    margin: 5px;
+    border: 3px dotted rgb(56, 202, 68);
+    padding: 15px;
+    font-family: "Comfortaa", serif;
+    text-align: center;
+    background:rgb(238, 130, 238) url("../img/dino.png") no-repeat;
+    background-size: auto 65%;
+}
+.bsprocproc{
+    max-width: 400px;
+    display: inline-block;
+    margin: 5px;
+    border: 3px dotted rgb(56, 202, 68);
+    padding: 15px;
+    font-family: "Comfortaa", serif;
+    text-align: center;
+    background:rgb(238, 130, 238) url("../img/dino.png") no-repeat;
+    background-size: 50% 65%;
+}
+.example-cover{
+    max-width: 500px;
+    display: inline-block;
+    margin: 30px;
+    border: 3px dotted rgb(56, 202, 68);
+    padding: 15px;
+    font-family: "Comfortaa", serif;
+    text-align: center;
+    background:rgb(255, 159, 191) url("../img/watermelon2.jfif") 50% no-repeat;
+    background-size:cover;
+}
+.example-contain{
+    max-width: 500px;
+    display: inline-block;
+    margin: 30px;
+    border: 3px dotted rgb(56, 202, 68);
+    padding: 15px;
+    font-family: "Comfortaa", serif;
+    text-align: center;
+    background:rgb(255, 159, 191) url("../img/watermelon2.jfif") 50% no-repeat;
+    background-size: contain;
+}
+.example-ba{
+    max-width: 500px;
+    margin: 30px;
+    padding: 15px;
+    font-family: "Comfortaa", serif;
+    text-align: center;
+    border: 3px solid rebeccapurple;
+    background: url("../img/unicorn.jpg") 50% / cover no-repeat fixed; 
+}
+.example{
+    max-width: 500px;
+    margin: 30px auto;
+    font-family: "Comfortaa", serif;
+    text-align: center;
+    font-size: 25px;
+    padding: 15px;
+    background-color: rgb(224, 120, 250);
+    border: 3px solid royalblue;
+}
+.fewimg{
+    max-width: 500px;
+    margin: 30px;
+    font-family: "Comfortaa", serif;
+    text-align: center;
+    padding: 15px;
+    border: 3px solid rebeccapurple;
+    background: url("../img/dino.png") 0 0 / 25% auto no-repeat, url("../img/unicorn.jpg");
+}
+.imgs{
+    max-width: 500px;
+    margin: 30px;
+    font-family: "Comfortaa", serif;
+    text-align: center;
+    padding: 15px;
+    border: 3px solid rebeccapurple;
+    background:url("../img/mashrooms.jpg") 0 0 no-repeat, url("../img/minions.jpg") bottom right no-repeat;
+}
+.imges{
+    max-width: 500px;
+    margin: 30px;
+    font-family: "Comfortaa", serif;
+    text-align: center;
+    padding: 15px;
+    border: 3px solid rebeccapurple;
+    background:url("../img/mashrooms.jpg") 0 0 no-repeat, url("../img/minions.jpg") bottom right / cover no-repeat;
+}
+.list{
+    max-width: 200px;
+    border: 3px solid rebeccapurple;
+    margin: 30px auto;
+    font-family: "Comfortaa", serif;
+    padding: 10px;
+}
+
+li.list-right{
+    margin-bottom: 5px;
+    background: url("../img/Overline_Mark.svg") right top no-repeat;
+    padding: 5px 0 5px 0;
+    min-height: 16px;
+}
+.maket-car{
+    font-family: 'Roboto', sans-serif;
+    max-width: 300px;
+    box-shadow: 3px 3px 5px rgb(140, 140, 141);
+    padding: 10px;
+    margin: 30px auto;
+}
+.contact-title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.15000000596046448px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.li-geo{
+    background: url("../img/place_24px.png") 0 0 no-repeat;
+    padding: 0 0 0 34px;
+    margin-bottom: 15px;
+}
+.li-phone{
+    background: url("../img/smartphone_24px.png") 0 0 no-repeat;
+    padding: 0 0 0 34px;
+    margin-bottom: 15px;
+}
+.li-mail{
+    background: url("../img/email_24px.png") 0 0 no-repeat;
+    padding: 0 0 0 34px;
+    margin-bottom: 15px;
+}
+.li-time{
+    background: url("../img/timer_24px.png") 0 0 no-repeat;
+    padding: 0 0 0 34px;
+    margin-bottom: 15px;
+}
+
+.big-maket-car{
+    max-width: 1440px;
+    background: url("../img/heroshot.png") 0 0 no-repeat;
+    padding: 280px 0 0 210px;
+    height: 800px;
+    margin: 30px auto;
+}
+.big-maket-title{
+    font-family: "Roboto", sans-serif;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 56px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #FFFFFF;
+    max-width: 583px;
+    margin-bottom: 48px;
+}
+.red-button{
+    max-width: 211px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 700;
+    line-height:48px;
+    letter-spacing: 0.15000000596046448px;
+    color: #FFFFFF;
+    border-radius: 2px;
+    background: #C40B0B url("../img/button_treatment.png") 100% 100% no-repeat;
+}
+.btn-title{
+    max-width: 168px;
+    text-align:center;
+}
+
+.big-block{
+    max-width: 1440px;
+    margin: 30px auto;
+}
+.extra-block{
+    max-width: 1440px;
+    height: 800px;
+    padding: 112px 210px 379px 210px;
+    background: url("../img/bluephone.png") 0 0 no-repeat;
+    margin: 0 auto;
+}
+.img-block{
+    display: inline-block;
+    max-width: 498px;
+    height: 315px;
+    padding: 0 210px 285px 732px;
+    margin-bottom: -245px;
+}
+
+.mini-title{
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 2.5px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #D5D5D5;
+    background: url("../img/Overline_Mark.svg") 0 0 no-repeat;
+    max-width: 300px;
+    padding: 2px 0 0 35px;
+    margin-bottom: 32px;
+}
+.title{
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 42px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #FFFFFF;
+    line-height: 42px;
+}
+.titles{
+    max-width: 411px;
+}
+
+.mini-block{
+    /* text-align: justify; */
+    margin-top: 85px;
+    max-height: 76px;
+}
+.mini{
+    max-width: 237px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42px;
+    letter-spacing: 0.15000000596046448px;
+    text-align: left;
+    display: inline-block;
+    margin-right: 24px;
+    /* margin: 0 24px 0 0; */
+    padding: 0 0 0 87px;
+}
+.oil{
+    background: url("../img/car_oil-24x.png") 0 0 no-repeat;
+}
+.transmission{
+    background: url("../img/car_transmission_24x.png") 0 0 no-repeat;
+}
+.alignment{
+    background: url("../img/car_alignment_24x.png") 0 0 no-repeat;
+}
+.engine{
+    background: url("../img/car_engine_2_24x.png") 0 0 no-repeat;
+}
+.num{
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 42px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #C40B0B;
+    display: inline-block;
+}
+.work{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.15000000596046448px;
+    text-align: left;
+    color: #F5F5F5;
+    display: inline-block;
+}

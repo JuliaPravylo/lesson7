@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Домашнє завдання 7</title>
+</head>
+
+<body>
+<div class="wrapper">
+<header>
+    <h1>Домашнє завдання 7</h1>
+</header>
+
+<main>
+
+<div class="block">
+    <div class="item">
+    background-color
+    </div>
+    <div class="text">Определяет цвет фона элемента. Хотя это свойство не наследует свойства своего родителя, из-за того, что начальное значение устанавливается прозрачным, цвет фона дочерних элементов совпадает с цветом фона родительского элемента.</div>
+</div>
+<!-- ---------------------------------- -->
+<div class="block">
+    <div class="item">background-image</div>
+    <div class="text">Устанавливает фоновое изображение для элемента. </div>
+</div>
+<div class="example-bi">
+    Пример цельная картинка
+</div>
+<div class="example-repeat-bi">
+    Пример маленькая картинка заполняет весь фон
+</div>
+
+<div class="block">
+    <div class="text">Если одновременно для элемента задан цвет фона, он будет показан, пока фоновая картинка не загрузится полностью. То же произойдет, если изображения не доступны или их показ в браузере отключен.</div>
+</div>
+<div class="example-crash-bi">
+    Пример поламанной картинки над фоном
+</div>
+<div class="example-img-bi">
+    <p>Пример картинки поверх фона</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, dolor? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, dolor? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, dolor? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, dolor?</p>
+</div>
+
+<div class="block">
+    <div class="text">В случае наличия в рисунке прозрачных областей, через них будет проглядывать фоновый цвет.</div>
+</div>
+<div class="example-img-trans">Пример картинки с прозрачным фоном</div>
+
+<div class="block">
+    <div class="text">В CSS3 допустимо указывать несколько фоновых изображений, перечисляя их параметры через запятую.</div>
+</div>
+<div class="example-img">Пример несколько фоновых картинок</div>
+<div class="example-grad">Пример градиент на фоне</div>
+
+<div class="block">
+    <div class="item">background-repeat</div>
+    <div class="text">Определяет, как будет повторяться фоновое изображение, установленное с помощью свойства background-image. Можно установить повторение рисунка только по горизонтали, по вертикали или в обе стороны. В CSS3 допустимо указывать несколько значений для каждого фона, перечисляя значения через запятую.</div>
+</div>
+
+<div class="example-imgnr">
+    <p>Пример background с no-repeat</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque minima sint quisquam quibusdam explicabo deserunt, alias beatae laudantium assumenda vero iure id nobis pariatur aspernatur dolorem eius similique aliquam fuga?</p>
+</div>
+
+<div class="example-imgxr">
+    <p>Пример background с repeat-x</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, suscipit debitis? Repudiandae debitis quibusdam expedita sunt dolores inventore, impedit officiis a labore ad iste voluptate sequi ullam velit esse illum.</p>
+</div>
+
+<div class="example-imgyr">
+    <p>Пример background с repeat-y</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, suscipit debitis? Repudiandae debitis quibusdam expedita sunt dolores inventore, impedit officiis a labore ad iste voluptate sequi ullam velit esse illum.</p>
+</div>
+
+<div class="block">
+    <div class="item">background-position</div>
+    <div class="text">
+        <p>Задает начальное положение фонового изображения, установленного с помощью свойства background-image. В CSS3 допустимо указывать несколько значений для каждого фона, перечисляя значения через запятую.</p>
+        <p>У свойства background-position два значения, положение по горизонтали (может быть — left, center, right) и вертикали (может быть — top, center, bottom). Кроме использования ключевых слов положение также можно задавать в процентах, пикселах или других единицах. Если применяются ключевые слова, то порядок их следования не имеет значения, при процентной записи вначале задается положение рисунка по горизонтали, а затем, через пробел, положение по вертикали.</p>
+    </div>
+</div>
+
+<div class="example-bp-tl">
+    <p>Пример background-position</p>
+    <p>top left = left top = 0% 0% (в левом верхнем углу)</p>
+</div>
+
+<div class="example-bp-tc">
+    <p>Пример background-position</p>
+    <p>top = top center = center top = 50% 0% (по центру вверху)</p>
+</div>
+
+<div class="example-bp-tr">
+    <p>Пример background-position</p>
+    <p>right top = top right = 100% 0% (в правом верхнем углу)</p>
+</div>
+
+<div class="example-bp-cl">
+    <p>Пример background-position</p>
+    left = left center = center left = 0% 50% (по левому краю и по центру)
+</div>
+
+<div class="example-bp-cc">
+    <p>Пример background-position</p>
+    <p>center = center center = 50% 50% (по центру)</p>
+</div>
+
+<div class="example-bp-cr">
+    <p>Пример background-position</p>
+    <p>right = right center = center right = 100% 50% (по правому краю и по центру)</p>
+</div>
+
+<div class="example-bp-bl">
+    <p>Пример background-position</p>
+    <p>bottom left = left bottom = 0% 100% (в левом нижнем углу)</p>
+</div>
+
+<div class="example-bp-bc">
+    <p>Пример background-position</p>
+    <p>bottom = bottom center = center bottom = 50% 100% (по центру внизу)</p>
+</div>
+
+<div class="example-bp-rb">
+    <p>Пример background-position</p>
+    <p>bottom right = right bottom = 100% 100% (в правом нижнем углу)</p>
+</div>
+
+<div class="block">
+    <div class="item">background-size</div>
+    <div class="text">Масштабирует фоновое изображение согласно заданным размерам.</div>
+</div>
+
+<div class="example-bs">
+    <p>Пример background-size в px</p> 
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae consequuntur dicta, atque placeat optio esse obcaecati necessitatibus, corrupti blanditiis est debitis labore ullam.</p>
+</div>
+<div class="example-bsproc">
+    <p>Примеры background-size в %</p>
+</div>
+<div class="bsprocauto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae consequuntur dicta, atque placeat optio esse obcaecati necessitatibus, corrupti blanditiis est debitis labore ullam.</div>
+<div class="bsautoproc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae consequuntur dicta, atque placeat optio esse obcaecati necessitatibus, corrupti blanditiis est debitis labore ullam.</div>
+<div class="bsprocproc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae consequuntur dicta, atque placeat optio esse obcaecati necessitatibus, corrupti blanditiis est debitis labore ullam.</div>
+
+<div class="example-cover">
+    <p>Пример background-size: cover</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae consequuntur dicta, atque placeat optio esse obcaecati necessitatibus, corrupti blanditiis est debitis labore ullam.</p>
+</div>
+
+<div class="example-contain">
+    <p>Пример background-size: contain</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae consequuntur dicta, atque placeat optio esse obcaecati necessitatibus, corrupti blanditiis est debitis labore ullam.</p>
+</div>
+
+<div class="block">
+    <div class="item">background-attachment</div>
+    <div class="text">Свойство background-attachment устанавливает, будет ли прокручиваться фоновое изображение вместе с содержимым элемента. Изображение может быть зафиксировано и оставаться неподвижным, либо перемещаться совместно с документом. В CSS3 можно указать несколько значений для ряда фоновых изображений, перечисляя значения через запятую.</div>
+</div>
+
+<div class="example-ba">
+    <p>Пример background-attachment: fixed</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolorum saepe rerum iure! Est molestiae explicabo qui, magnam alias hic, repellat veritatis modi officia, sit sed animi iusto eos possimus!</p>
+</div>
+
+<div class="example">Другие примеры</div>
+
+<div class="fewimg">Voluptatibus vero facilis, adipisci aut totam cupiditate similique quibusdam exercitationem, ducimus tempore expedita fugiat repellat provident maxime voluptates ipsum itaque voluptatem. </div>
+
+<div class="imgs">Voluptatibus vero facilis, adipisci aut totam cupiditate similique quibusdam exercitationem, ducimus tempore expedita fugiat repellat provident maxime voluptates ipsum itaque voluptatem.</div>
+
+<div class="imges">Voluptatibus vero facilis, adipisci aut totam cupiditate similique quibusdam exercitationem, ducimus tempore expedita fugiat repellat provident maxime voluptates ipsum itaque voluptatem.</div>
+
+
+<div class="example">Стилизируем список так чтобы картинка была справа</div>
+
+<div class="list">
+    <ul>
+        <li class="list-right">Пункт 1</li>
+        <li class="list-right">Пункт 2</li>
+        <li class="list-right">Пункт 3 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </li>
+        <li class="list-right">Пункт 4</li>
+        <li class="list-right">Пункт 5</li>
+    </ul>
+</div>
+
+<div class="example">Блок из макета (Car Repair and Doggie)</div> 
+
+<div class="maket-car">
+    
+    <div class="contact-title">CONTACT</div>
+    
+    <ul class="contact-list">
+        <li class="li-geo">321 Pikes Place Parkway Seattle, WA 54321</li>
+        <li class="li-phone">(555) 765-4321</li>
+        <li class="li-mail">Info@company.com</li>
+        <li class="li-time">Mon - Sat:  7:000 am - 6:00 pm</li>
+    </ul>
+</div>
+
+<div class="big-maket-car">
+    
+    <div class="big-maket-box">
+        <div class="big-maket-title">Top notch service is our main auto motive</div>
+        <div class="red-button">
+            <div class="btn-title">Make an Appointment</div>
+        </div>
+        </div>
+    </div>
+    
+<div class="big-block">
+<div class="img-block">
+    <img src="./img/car.png" alt="car">
+</div>
+<div class="extra-block">
+    <div class="titles">
+    <div class="mini-title">OUR IMPACT</div>
+    <div class="title">Nemo enim ipsam voluptatem quia voluptas</div>
+    </div>
+
+    <div class="mini-block">
+        <div class="mini oil">
+            <div class="num">16k+</div>
+            <div class="work">Oil changes</div>
+        </div>
+        <div class="mini transmission">
+            <div class="num">13k+</div>
+            <div class="work">Transmission repairs</div>
+        </div>
+        <div class="mini alignment">
+            <div class="num">15k+</div>
+            <div class="work">Alignments made</div>
+        </div>
+        <div class="mini engine">
+            <div class="num">11,500+</div>
+            <div class="work">Engines repaired</div>
+        </div>
+    </div>
+
+</div>
+</div>
+
+
+
+
+
+
+</main>
+
+<footer>
+</footer>
+
+</div>
+</body>
+</html>
