@@ -50,6 +50,12 @@ body {
 	padding: 20px;
 }
 /* ------------------------------ */
+h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+    color: springgreen;
+}
 
 .block{
     background-color:deeppink;
@@ -565,13 +571,10 @@ li.list-right{
 
 .mini-block{
     text-align: justify;
-    vertical-align: top;
     margin-top: 85px;
-    max-height: 76px;
 }
 .mini{
     width: 237px;
-    height: 76px;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -581,8 +584,8 @@ li.list-right{
     text-align: left;
     display: inline-block;
     margin-right: 15px;
-    /* margin: 0 24px 0 0; */
-    padding: 0 0 0 87px;
+    padding: 0 0 0 88px;
+    vertical-align: top;
 }
 .oil{
     background: url("../img/car_oil-24x.png") 0 0 no-repeat;
@@ -604,7 +607,8 @@ li.list-right{
     letter-spacing: 0px;
     text-align: left;
     color: #C40B0B;
-    /* display: inline-block; */
+    margin-top: 4px;
+    margin-bottom: 3px;
 }
 .work{
     font-size: 16px;
@@ -614,5 +618,5 @@ li.list-right{
     letter-spacing: 0.15000000596046448px;
     text-align: left;
     color: #F5F5F5;
-    /* display: inline-block; */
+    margin-bottom: 3px;
 }
